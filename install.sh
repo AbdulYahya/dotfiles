@@ -3,7 +3,7 @@
 export PATH="/opt/homebrew/bin:/usr/local/bin:${PATH}"
 caffeinate & # Prevent Mac from going to sleep
 
-tmp_dir="${mktemp -d}"
+tmp_dir="$(mktemp -d)"
 curl --location 'https://github.com/abdulyahya/dotfiles/archive/main.zip' | ditto -xk - "${tmp_dir}"
 
 for shell_script in "${tmp_dir}/dotfiles-main/scripts/"*.sh; do
