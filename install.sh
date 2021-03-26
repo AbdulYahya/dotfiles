@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 export PATH="/opt/homebrew/bin:/usr/local/bin:${PATH}"
 caffeinate & # Prevent Mac from going to sleep
