@@ -6,7 +6,7 @@ caffeinate & # Prevent Mac from going to sleep
 tmp_dir="${mktemp -d}"
 curl --location 'https://github.com/abdulyahya/dotfiles/archive/main.zip' | ditto -xk - "${tmp_dir}"
 
-for shell_script in "${tmp_dir}/dotfiles-master/scripts/"*.sh; do
+for shell_script in "${tmp_dir}/dotfiles-main/scripts/"*.sh; do
     source "${shell_script}"
 done
 
